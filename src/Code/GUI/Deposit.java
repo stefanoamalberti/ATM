@@ -2,6 +2,7 @@ package Code.GUI;
 // Deposit.java
 // Represents a deposit ATM transaction
 
+import Code.Business_logic.Euro;
 import Code.Database.BankDatabase;
 
 public class Deposit extends Transaction
@@ -53,7 +54,7 @@ public class Deposit extends Transaction
                "enclosed cash and your checks clear." );
             
             // credit account to reflect the deposit
-            bankDatabase.credit( getAccountNumber(), amount ); 
+            bankDatabase.credit( getAccountNumber(), new Euro(amount) ); 
          } // end if
          else // deposit envelope not received
          {

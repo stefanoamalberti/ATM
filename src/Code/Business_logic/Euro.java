@@ -21,6 +21,10 @@ public class Euro {
 		return valore;
 	}
 
+	public double getValoreDouble() {
+		return (double)valore/100;
+	}
+
 	public Euro somma(Euro e) {
 		this.valore = this.valore + e.getValore();
 		return this;
