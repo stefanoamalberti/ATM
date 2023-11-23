@@ -2,7 +2,7 @@ package Code.GUI;
 // Transaction.java
 // Abstract superclass Transaction represents an ATM transaction
 
-import Code.BankDatabase;
+import Code.Database.BankDatabase;
 
 public abstract class Transaction
 {

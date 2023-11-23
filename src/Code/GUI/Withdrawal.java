@@ -2,7 +2,7 @@ package Code.GUI;
 // Withdrawal.java
 // Represents a withdrawal ATM transaction
 
-import Code.BankDatabase;
+import Code.Database.BankDatabase;
 
 public class Withdrawal extends Transaction
 {

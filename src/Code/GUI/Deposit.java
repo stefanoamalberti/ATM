@@ -2,7 +2,7 @@ package Code.GUI;
 // Deposit.java
 // Represents a deposit ATM transaction
 
-import Code.BankDatabase;
+import Code.Database.BankDatabase;
 
 public class Deposit extends Transaction
 {
