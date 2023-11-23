@@ -5,12 +5,12 @@ public class Account
 {
    private int accountNumber; // account number
    private int pin; // PIN for authentication
-   private double availableBalance; // funds available for withdrawal
-   private double totalBalance; // funds available + pending deposits
+   private long availableBalance; // funds available for withdrawal
+   private long totalBalance; // funds available + pending deposits
 
    // Account constructor initializes attributes
    public Account( int theAccountNumber, int thePIN, 
-      double theAvailableBalance, double theTotalBalance )
+      long theAvailableBalance, long theTotalBalance )
    {
       accountNumber = theAccountNumber;
       pin = thePIN;
@@ -28,25 +28,25 @@ public class Account
    } // end method validatePIN
    
    // returns available balance
-   public double getAvailableBalance()
+   public long getAvailableBalance()
    {
       return availableBalance;
    } // end getAvailableBalance
 
    // returns the total balance
-   public double getTotalBalance()
+   public long getTotalBalance()
    {
       return totalBalance;
    } // end method getTotalBalance
 
    // credits an amount to the account
-   public void credit( double amount )
+   public void credit( long amount )
    {
       totalBalance += amount; // add to total balance
    } // end method credit
 
    // debits an amount from the account
-   public void debit( double amount )
+   public void debit( long amount )
    {
       availableBalance -= amount; // subtract from available balance
       totalBalance -= amount; // subtract from total balance
